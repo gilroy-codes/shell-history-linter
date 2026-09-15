@@ -1,0 +1,17 @@
+{
+  "name": "shhlint",
+  "version": "0.1.0",
+  "description": "Strict-by-default linter for shell history files",
+  "bin": {
+    "shhlint": "dist/cli.js"
+  },
+  "main": "dist/cli.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "author": "gilroy-codes"
+}
