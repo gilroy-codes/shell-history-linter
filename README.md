@@ -65,11 +65,6 @@ TypeScript compiler.
   file.
 
 shhlint understands both plain history files (one command per line) and
-zsh's extended history format (`: <epoch>:<elapsed>;<command>`).
-
-## Limitations
-
-Multi-line history entries (a command that spans several physical lines)
-are currently linted line by line rather than reassembled first, so a
-dangerous command split across lines can be missed. See the roadmap for
-planned fixes.
+zsh's extended history format (`: <epoch>:<elapsed>;<command>`), including
+entries that span several physical lines (zsh writes a trailing backslash
+at the end of each line it continues).
